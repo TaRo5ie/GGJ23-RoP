@@ -23,7 +23,7 @@ public class Inventory : MonoBehaviour
             inventoryButtons[i] = GameObject.Find("Memory ("+(i+1)+")");
         }
 
-        
+        UpdateInventory();
         ToggleInventory();
     }
 
@@ -35,7 +35,11 @@ public class Inventory : MonoBehaviour
 
     public void UpdateInventory()
     {
-        
+        for(int i=0; i<inventorySize; i++)
+        {
+            inventoryButtons[i].GetComponent<Image>().sprite = inventoryObjects[i].memoryPreview;
+        }
+
     }
 
     public void ToggleInventory()
