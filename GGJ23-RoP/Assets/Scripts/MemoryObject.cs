@@ -6,7 +6,7 @@ using UnityEngine;
 public class MemoryObject : ScriptableObject
 {
     public enum LifeState
-    {Child, Young, MiddleAged, Old}
+    {None, Child, Young, MiddleAged, Old}
 
     [HideInInspector]
     public int choiceNumber;

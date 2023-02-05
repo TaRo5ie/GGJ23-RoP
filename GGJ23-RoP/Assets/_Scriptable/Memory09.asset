@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   choiceNumber: 0
   objectID: 9
-  lifeState: 2
+  lifeState: 3
   memoryPreview: {fileID: 21300000, guid: d7b1f1d6cd057544f8cf7b89b5e3550b, type: 3}
