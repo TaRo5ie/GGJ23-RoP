@@ -8,6 +8,8 @@ public class Inventory : MonoBehaviour
     public bool isInventoryOpen;
     public MemoryObject blankItem;
     public int inventorySize = 3;
+
+    public int selectedObjectID = 0;
     public MemoryObject[] inventoryObjects;
     public GameObject[] inventoryButtons;
     // Start is called before the first frame update
@@ -31,6 +33,12 @@ public class Inventory : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SwapMemory(MemoryObject mapMemory)
+    {
+        inventoryObjects[selectedObjectID-1] = mapMemory;
+        UpdateInventory();
     }
 
     public void UpdateInventory()
