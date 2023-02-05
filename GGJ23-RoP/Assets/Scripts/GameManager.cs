@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public int numStages = 4;
     public int currentStage;
 
+    public int currentSubStage;
+
     public Transform currentPivot;
     public GameObject currentPathPrefab;
     
@@ -15,6 +17,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentStage = 0;
+        currentSubStage = 0;
     }
 
     // Update is called once per frame
