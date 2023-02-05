@@ -35,6 +35,12 @@ public class Inventory : MonoBehaviour
         
     }
 
+    public void SwapMemory(MemoryObject mapMemory)
+    {
+        inventoryObjects[selectedObjectID-1] = mapMemory;
+        UpdateInventory();
+    }
+
     public void UpdateInventory()
     {
         for(int i=0; i<inventorySize; i++)
