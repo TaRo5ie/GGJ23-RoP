@@ -16,7 +16,5 @@ public class PathManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        startPoint = GetComponentInChildren<PathStartID>().gameObject.transform;
-        endPoint = GetComponentInChildren<PathEndID>().gameObject.transform;
     }
 }

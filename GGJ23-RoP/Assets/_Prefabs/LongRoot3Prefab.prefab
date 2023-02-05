@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559286097430222546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.31, y: -13.35, z: 0}
+  m_LocalPosition: {x: 10.69, y: -17.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69,7 +69,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2246588534173685615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.13, y: -7.82, z: 0}
+  m_LocalPosition: {x: 4.3839993, y: -9.371, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -117,7 +117,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dda229ab8c6a5ff4f9e1223ca2182224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6dd36d8e2db81f4b8d61b5a23d06d2a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 4270350323839863617}
   - component: {fileID: 5181845413494437130}
   m_Layer: 0
-  m_Name: MemoryBranchPrefab
+  m_Name: LongRoot3Prefab
   m_TagString: Path
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
