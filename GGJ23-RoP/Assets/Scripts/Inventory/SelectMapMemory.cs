@@ -25,6 +25,7 @@ public class SelectMapMemory : MonoBehaviour
         if(inventory == null)
         {
             inventory = FindObjectOfType<Inventory>();
+            memoryFadeAnim = GetComponentInParent<Animator>();
         }
     }
 
