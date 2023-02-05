@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d85d5dbb9f9825a4e9080b28706b70ae
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Charmonman
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a11998bfaf7c971429574e3ac386764a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
