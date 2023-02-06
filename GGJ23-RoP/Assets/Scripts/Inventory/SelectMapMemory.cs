@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class SelectMapMemory : MonoBehaviour
 {
+    private GameManager gameManager;
+
+    private PathManager pathManager;
     public Inventory inventory;
     public MemoryObject memory;
-
-    [HideInInspector]
-
-    private Animator memoryFadeAnim;
+    public SpriteRenderer memSpriteRender;
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
         inventory = FindObjectOfType<Inventory>();
-        memoryFadeAnim = GetComponentInParent<Animator>();
-        memoryFadeAnim.ResetTrigger("Fade");
-        GetComponent<SpriteRenderer>().sprite = memory.memoryPreview;
+        memSpriteRender = GetComponent<SpriteRenderer>();
+        memSpriteRender.sprite = memory.memoryPreview;
+        
+        pathManager.fadeAnim.ResetTrigger("Fade");
     }
 
     // Update is called once per frame
@@ -25,7 +27,6 @@ public class SelectMapMemory : MonoBehaviour
         if(inventory == null)
         {
             inventory = FindObjectOfType<Inventory>();
-            memoryFadeAnim = GetComponentInParent<Animator>();
         }
     }
 
@@ -39,7 +40,10 @@ public class SelectMapMemory : MonoBehaviour
             inventory.SwapMemory(memory);
             memory = invMemory;
             GetComponent<SpriteRenderer>().sprite = memory.memoryPreview;
-            memoryFadeAnim.SetTrigger("Fade");
+            pathManager.fadeAnim.SetTrigger("Fade");
+
+            gameManager.currentSubStage ++;
         }
     }
+
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4330640104814947443}
   - component: {fileID: 8973198323469217146}
   m_Layer: 0
-  m_Name: MapMemory
+  m_Name: MapMem03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,7 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
-  memory: {fileID: 11400000, guid: 481f962916812944fa231e544d4a80f2, type: 2}
+  memory: {fileID: 11400000, guid: b4da6725917aa164e8a53524b77be752, type: 2}
+  memoryFadeAnim: {fileID: 0}
 --- !u!212 &4330640104814947443
 SpriteRenderer:
   m_ObjectHideFlags: 0
