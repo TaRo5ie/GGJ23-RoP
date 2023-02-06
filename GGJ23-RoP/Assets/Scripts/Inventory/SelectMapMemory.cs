@@ -6,7 +6,7 @@ public class SelectMapMemory : MonoBehaviour
 {
     private GameManager gameManager;
 
-    private PathManager pathManager;
+    public PathManager pathManager;
     public Inventory inventory;
     public MemoryObject memory;
     public SpriteRenderer memSpriteRender;
