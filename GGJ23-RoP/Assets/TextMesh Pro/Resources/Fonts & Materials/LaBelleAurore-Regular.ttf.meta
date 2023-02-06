@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4a237ff9a18b63f47b21f131c216cfbb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - La Belle Aurore
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1cd5c85beae7c5a4abecf067d7981a88, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

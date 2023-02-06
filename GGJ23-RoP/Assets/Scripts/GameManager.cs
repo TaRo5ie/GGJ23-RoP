@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public int numStages = 4;
     public int currentStage;
 
+    public int currentSubStage;
+
     public Transform currentPivot;
     public GameObject currentPathPrefab;
     public GameObject fog;
@@ -15,6 +17,7 @@ public class GameManager : MonoBehaviour
     float timer;
     bool hasDestroy;
  //when the fog catches the player, they both die!
+    //when the fog catches the player, they both die!
     
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,8 @@ public class GameManager : MonoBehaviour
         currentStage = 0;
         fog1= Instantiate(fog, currentPivot.position, Quaternion.identity);
         hasDestroy = false;
+
+        currentSubStage = 0;
     }
 
     // Update is called once per frame
