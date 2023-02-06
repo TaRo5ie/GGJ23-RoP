@@ -461,6 +461,7 @@ MonoBehaviour:
   currentSubStage: 0
   currentPivot: {fileID: 319080313}
   currentPathPrefab: {fileID: 0}
+  fog: {fileID: 0}
 --- !u!4 &319080313
 Transform:
   m_ObjectHideFlags: 0

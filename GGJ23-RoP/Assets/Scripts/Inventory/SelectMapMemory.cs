@@ -18,7 +18,7 @@ public class SelectMapMemory : MonoBehaviour
         memSpriteRender = GetComponent<SpriteRenderer>();
         memSpriteRender.sprite = memory.memoryPreview;
         
-        pathManager.fadeAnim.ResetTrigger("Fade");
+        //pathManager.fadeAnim.ResetTrigger("Fade");
     }
 
     // Update is called once per frame
@@ -40,7 +40,7 @@ public class SelectMapMemory : MonoBehaviour
             inventory.SwapMemory(memory);
             memory = invMemory;
             GetComponent<SpriteRenderer>().sprite = memory.memoryPreview;
-            pathManager.fadeAnim.SetTrigger("Fade");
+            //pathManager.fadeAnim.SetTrigger("Fade");
 
             gameManager.currentSubStage ++;
         }
