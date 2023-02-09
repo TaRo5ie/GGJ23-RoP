@@ -10,10 +10,11 @@ public class MapGenerator : MonoBehaviour
 
     public GameObject[] pathPrefabs;
     public GameObject[] memPathPrefabs;
-    public GameObject[] childPathPrefabs;
-    public GameObject[] youngPathPrefabs;
-    public GameObject[] middleAgePathPrefabs;
-    public GameObject[] oldPathPrefabs;
+    public GameObject[] memoryPrefabs;
+    public GameObject[] childMemoryPrefabs;
+    public GameObject[] youngMemoryPrefabs;
+    public GameObject[] middleAgeMemoryPrefabs;
+    public GameObject[] oldMemoryPrefabs;
     
     public Transform pathStart;
 
@@ -23,6 +24,8 @@ public class MapGenerator : MonoBehaviour
     public int maxNumPaths; //maximum number of paths that can be randomly generated for next stage
     public int minNumPaths;
 
+    private int maxSubStages = 5; // maximum number of stages that can be generated before current stage # goes up
+
     private int numMemoryPaths; // number of paths where a memory will spawn for that pivot point
 
     // Start is called before the first frame update
@@ -30,6 +33,8 @@ public class MapGenerator : MonoBehaviour
     {
         
         numMemoryPaths = 0;
+        memoryPrefabs = oldMemoryPrefabs; // start with old memories
+
         paths = new GameObject();
         gameManager = GetComponent<GameManager>();
         GenerateMap(pathStart);
@@ -46,10 +51,25 @@ public class MapGenerator : MonoBehaviour
     public void GenerateMap(Transform pivotPoint)
     {
 
-        if(gameManager.currentSubStage > 5)
+        if(gameManager.currentSubStage > maxSubStages)
         {
-            gameManager.currentStage ++;
+            gameManager.currentStage ++; // increases current stage of life after a certain number of stages have passed
             gameManager.currentSubStage = 0;
+
+            switch (gameManager.currentStage)
+            {
+                case 1:
+                memoryPrefabs = middleAgeMemoryPrefabs;
+                break;
+
+                case 2:
+                memoryPrefabs = youngMemoryPrefabs;
+                break;
+
+                case 3:
+                memoryPrefabs = childMemoryPrefabs;
+                break;
+            }
         }
 
         GameObject newPath;
@@ -88,9 +108,21 @@ public class MapGenerator : MonoBehaviour
             }
             break;
 
-            default:
-            break;
+        }
+        
+    }
 
+    public void lockPaths()
+    {
+        PathManager[] currentPaths;
+        currentPaths = paths.GetComponentsInChildren<PathManager>();
+
+        foreach(PathManager path in currentPaths)
+        {
+            if(path.hasBeenSelected == false)
+            {
+                path.hasBeenSelected = true;
+            }
         }
         
     }
