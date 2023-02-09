@@ -12,7 +12,7 @@ public class ButtonManager : MonoBehaviour
 
     public void LoadScene2()
     {
-        SceneManager.LoadScene("Ending Credits");
+        SceneManager.LoadScene("Credits");
     }
 
 
