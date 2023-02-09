@@ -25,7 +25,8 @@ public class MapGenerator : MonoBehaviour
     public int minNumPaths;
 
     private int maxSubStages = 5; // maximum number of stages that can be generated before current stage # goes up
-
+    private int memoryCutoff = 2; // maximum number of stages that can be generated before a memory shows up
+    private int memoryPityCount = 0; // number of paths that have Not spawned a memory in this stage;
     private int numMemoryPaths; // number of paths where a memory will spawn for that pivot point
 
     // Start is called before the first frame update
@@ -73,7 +74,18 @@ public class MapGenerator : MonoBehaviour
         }
 
         GameObject newPath;
-        numMemoryPaths = Random.Range(0,2);
+
+        Debug.Log(memoryPityCount);
+
+        if(memoryPityCount < memoryCutoff)
+        {
+            numMemoryPaths = Random.Range(0,2);
+        }else
+        {
+            Debug.Log("Hit Memory Pity");
+            numMemoryPaths = 1;
+            memoryPityCount = 0;
+        }
         
         switch (numMemoryPaths)
         {
@@ -98,7 +110,7 @@ public class MapGenerator : MonoBehaviour
 
             case 0:
 
-
+            memoryPityCount ++;
             for(int i=0; i<Random.Range(minNumPaths, maxNumPaths); i++)
             {
                 pathPrefab = pathPrefabs[Random.Range(0, pathPrefabs.Length)];

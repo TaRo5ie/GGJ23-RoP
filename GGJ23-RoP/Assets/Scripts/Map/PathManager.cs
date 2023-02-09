@@ -65,6 +65,8 @@ public class PathManager : MonoBehaviour
         {
             
             hasBeenSelected = true;
+            gameManager.currentSubStage ++;
+            Debug.Log("Current Choice is: "+gameManager.currentStage+"-"+gameManager.currentSubStage);
             mapGen.lockPaths();
             mapGen.GenerateMap(endPoint);
         }
