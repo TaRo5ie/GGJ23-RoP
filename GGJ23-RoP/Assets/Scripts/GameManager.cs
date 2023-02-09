@@ -12,20 +12,21 @@ public class GameManager : MonoBehaviour
 
     public Transform currentPivot;
     public GameObject currentPathPrefab;
+    public GameObject Player;
+
     public GameObject fog;
     GameObject fog1;
     float timer;
     bool hasDestroy;
- //when the fog catches the player, they both die!
     //when the fog catches the player, they both die!
-    
+    //when the fog catches the player, they both die!
+
     // Start is called before the first frame update
     void Start()
     {
         currentStage = 0;
-        fog1= Instantiate(fog, currentPivot.position, Quaternion.identity);
+        fog1 = Instantiate(fog, Player.transform.position, Quaternion.identity);
         hasDestroy = false;
-
         currentSubStage = 0;
     }
 
@@ -33,9 +34,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if(!hasDestroy)
+        if (!hasDestroy)
 
-            if(timer > 10f) {
+            if (timer > 1000000f)
+            {
                 destroyFog();
                 hasDestroy = true;
             }
@@ -50,4 +52,23 @@ public class GameManager : MonoBehaviour
     {
         //update currentPivot to PathManager endPoint of current path
     }
+
+    /*   private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Fog"))
+        {
+            fog1.GetComponent<Fog>().isChasing = true;
+
+        }
+
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Fog"))
+        {
+            fog1.GetComponent<Fog>().isChasing = false;
+
+        }
+    } */
 }
+
