@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 31251553}
   - component: {fileID: 31251552}
   - component: {fileID: 31251551}
+  - component: {fileID: 31251554}
   m_Layer: 5
   m_Name: Exit_Button
   m_TagString: Untagged
@@ -206,7 +207,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 31251552}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 31251554}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &31251552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +258,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31251549}
   m_CullTransparentMesh: 1
+--- !u!114 &31251554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31251549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7641ea2b888624b0d8cb1b6043d376d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &100188738
 GameObject:
   m_ObjectHideFlags: 0
@@ -5841,7 +5866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371590581}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.37, y: 2.28, z: -3.2440257}
+  m_LocalPosition: {x: -2.3, y: 2.32, z: -3.2440257}
   m_LocalScale: {x: 1.1301346, y: 1.1301346, z: 1.1301346}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5860,6 +5885,7 @@ GameObject:
   - component: {fileID: 1421140383}
   - component: {fileID: 1421140382}
   - component: {fileID: 1421140381}
+  - component: {fileID: 1421140384}
   m_Layer: 5
   m_Name: Credit_Button
   m_TagString: Untagged
@@ -5931,7 +5957,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1421140382}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1421140384}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: LoadScene2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1421140382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5970,6 +6008,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421140379}
   m_CullTransparentMesh: 1
+--- !u!114 &1421140384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421140379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7641ea2b888624b0d8cb1b6043d376d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1568855976
 GameObject:
   m_ObjectHideFlags: 0
@@ -5982,6 +6032,7 @@ GameObject:
   - component: {fileID: 1568855980}
   - component: {fileID: 1568855979}
   - component: {fileID: 1568855978}
+  - component: {fileID: 1568855981}
   m_Layer: 5
   m_Name: Play_Button
   m_TagString: Untagged
@@ -6053,7 +6104,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1568855979}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1568855981}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: LoadScene1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1568855979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6092,6 +6155,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568855976}
   m_CullTransparentMesh: 1
+--- !u!114 &1568855981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568855976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7641ea2b888624b0d8cb1b6043d376d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1741412094
 GameObject:
   m_ObjectHideFlags: 0
