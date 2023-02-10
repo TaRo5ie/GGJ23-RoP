@@ -26,7 +26,8 @@ public class MapGenerator : MonoBehaviour
 
     private int maxSubStages = 5; // maximum number of stages that can be generated before current stage # goes up
     private int memoryCutoff = 2; // maximum number of stages that can be generated before a memory shows up
-    private int memoryPityCount = 0; // number of paths that have Not spawned a memory in this stage;
+    [HideInInspector]
+    public int memoryPityCount = 0; // number of paths that have Not spawned a memory in this stage;
     private int numMemoryPaths; // number of paths where a memory will spawn for that pivot point
 
     // Start is called before the first frame update
@@ -75,26 +76,31 @@ public class MapGenerator : MonoBehaviour
 
         GameObject newPath;
 
-        Debug.Log(memoryPityCount);
+        Debug.Log("Pity in "+(memoryCutoff-memoryPityCount )+" turns.");
 
         if(memoryPityCount < memoryCutoff)
         {
-            numMemoryPaths = Random.Range(0,2);
+            numMemoryPaths = Random.Range(0,5); // 1 in 5 chance to roll a memory without pity
         }else
         {
             Debug.Log("Hit Memory Pity");
             numMemoryPaths = 1;
             memoryPityCount = 0;
         }
+
+        
+                Debug.Log("numMemoryPaths = "+numMemoryPaths);
         
         switch (numMemoryPaths)
         {
             case 1:
+            
+            memoryPityCount = 0;
             for(int i=0; i<Random.Range(minNumPaths, maxNumPaths); i++)
             {
                 pathPrefab = pathPrefabs[Random.Range(0, pathPrefabs.Length)];
                 memPathPrefab = memPathPrefabs[Random.Range(0, memPathPrefabs.Length)];
-                if(i == minNumPaths)
+                if(i == (minNumPaths-1))
                 {                    
                     newPath = Instantiate(memPathPrefab, pivotPoint.position, Quaternion.identity);
                 }
@@ -108,9 +114,8 @@ public class MapGenerator : MonoBehaviour
 
             break;
 
-            case 0:
+            default:
 
-            memoryPityCount ++;
             for(int i=0; i<Random.Range(minNumPaths, maxNumPaths); i++)
             {
                 pathPrefab = pathPrefabs[Random.Range(0, pathPrefabs.Length)];
