@@ -462,7 +462,7 @@ MonoBehaviour:
   currentPivot: {fileID: 319080313}
   currentPathPrefab: {fileID: 0}
   Player: {fileID: 1980061223}
-  fog: {fileID: 6026467776939973194, guid: 0b1f22c5b68ac45fd9a87c06aa6fb117, type: 3}
+  fognew_3: {fileID: 3363051167028656629, guid: 71acf414819fd447eb34e7a975c5e33d, type: 3}
 --- !u!4 &319080313
 Transform:
   m_ObjectHideFlags: 0
