@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4330640104814947441}
   - component: {fileID: 4330640104814947443}
   - component: {fileID: 8973198323469217146}
+  - component: {fileID: -3779314069511632891}
   m_Layer: 0
   m_Name: MapMem06
   m_TagString: Untagged
@@ -46,9 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b9210b09381b341b5d353fa6d39c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pathManager: {fileID: 0}
   inventory: {fileID: 0}
   memory: {fileID: 11400000, guid: 45fc12686e96546458cdcf266295cbaa, type: 2}
-  memoryFadeAnim: {fileID: 0}
+  memSpriteRender: {fileID: 0}
 --- !u!212 &4330640104814947443
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -117,3 +119,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.7649288}
   serializedVersion: 2
   m_Radius: 10.444086
+--- !u!114 &-3779314069511632891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4330640104814947470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8da9dca0fd1bc4894de8b91cbf70f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  memoryPreview: {fileID: 0}
