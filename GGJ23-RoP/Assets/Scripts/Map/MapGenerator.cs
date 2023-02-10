@@ -44,10 +44,10 @@ public class MapGenerator : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            GenerateMap(pathStart);
-        }
+        // if(Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     GenerateMap(pathStart);
+        // }
     }
 
     public void GenerateMap(Transform pivotPoint)
