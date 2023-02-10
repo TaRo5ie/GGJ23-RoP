@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205916153}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: ashe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,14 +152,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1431265690}
-  - {fileID: 394300369}
-  m_Father: {fileID: 839895289}
-  m_RootOrder: 0
+  m_Father: {fileID: 1214084403}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 347.299, y: -66.631}
-  m_SizeDelta: {x: 577.176, y: 734.644}
+  m_AnchoredPosition: {x: 330.6142, y: -28.456}
+  m_SizeDelta: {x: 581.948, y: 753.731}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &283739091
 GameObject:
@@ -172,13 +171,14 @@ GameObject:
   - component: {fileID: 283739092}
   - component: {fileID: 283739094}
   - component: {fileID: 283739093}
+  - component: {fileID: 283739095}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &283739092
 RectTransform:
   m_ObjectHideFlags: 0
@@ -192,12 +192,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1214084403}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -370, y: 21}
-  m_SizeDelta: {x: 1000.139, y: 800.39}
+  m_AnchoredPosition: {x: -234.91, y: 17.491}
+  m_SizeDelta: {x: 1270.319, y: 807.408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &283739093
 MonoBehaviour:
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_text: "Director: Haoyu Gao (Rosie)\r\n\rProducer: Quinn Liu\r\n\rArt: Xiaodan
     Zhang, \n      Yue Deng \r\n\rDeveloper: Nitesh Sridhar\r\n\rNarrative: Yuhong
     Fu (Yvette), \n             Quinn Liu,\n             Rosie\r\n\rSound: Quinn
-    Liu\r\n\rDesign: \nAll of the above, \nCaroline \"Taro\" Zhou\r\n\r\nSpecial
+    Liu\r\n\rDesign: All of the above, \n         and Caroline \"Taro\" Zhou\r\n\r\nSpecial
     Thanks to \nAndy Chen "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e51f7e1dfd311f04abc6130f4fb9106b, type: 2}
@@ -300,6 +300,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283739091}
   m_CullTransparentMesh: 1
+--- !u!95 &283739095
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283739091}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 10a28af3a85fdef48b938e47aa534c44, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &394300368
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,12 +350,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 205916153}
-  m_RootOrder: 1
+  m_Father: {fileID: 1431265690}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38.727997, y: 216.86795}
+  m_AnchoredPosition: {x: 38.728077, y: 216.86795}
   m_SizeDelta: {x: 169.954, y: 117.317}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &394300370
@@ -426,7 +446,9 @@ PlayableDirector:
   - key: {fileID: -226349817068376669, guid: b743e64107334284c840fd06ccc56038, type: 2}
     value: {fileID: 839895292}
   - key: {fileID: 1194424852749336741, guid: b743e64107334284c840fd06ccc56038, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1431265693}
+  - key: {fileID: 5561748154178863330, guid: b743e64107334284c840fd06ccc56038, type: 2}
+    value: {fileID: 283739095}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &839895288
@@ -459,14 +481,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 205916153}
+  m_Children: []
   m_Father: {fileID: 1214084403}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &839895290
@@ -517,7 +538,7 @@ Animator:
   m_GameObject: {fileID: 839895288}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b546e2f4ecd9c624983b9dc835968651, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -690,6 +711,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 839895289}
+  - {fileID: 205916153}
   - {fileID: 1542887087}
   - {fileID: 283739092}
   m_Father: {fileID: 0}
@@ -842,6 +864,7 @@ GameObject:
   - component: {fileID: 1431265690}
   - component: {fileID: 1431265692}
   - component: {fileID: 1431265691}
+  - component: {fileID: 1431265693}
   m_Layer: 5
   m_Name: She
   m_TagString: Untagged
@@ -860,7 +883,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 394300369}
   m_Father: {fileID: 205916153}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -907,6 +931,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431265689}
   m_CullTransparentMesh: 1
+--- !u!95 &1431265693
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431265689}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 12c9063c49f9a614e96b754a0c36efa3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1542887086
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1542887087
 RectTransform:
   m_ObjectHideFlags: 0
@@ -938,12 +982,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1214084403}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -619, y: -474}
-  m_SizeDelta: {x: 544.101, y: 99.75}
+  m_AnchoredPosition: {x: 667, y: -455.04}
+  m_SizeDelta: {x: 891.05, y: 137.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1542887088
 MonoBehaviour:
@@ -992,8 +1036,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 96
+  m_fontSizeBase: 96
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1078,7 +1122,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.0627451, g: 0.08235294, b: 0.121568635, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
