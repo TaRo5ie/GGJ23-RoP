@@ -132,3 +132,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryPreview: {fileID: 0}
+  blank: {fileID: 11400000, guid: 5168b6f601e682b48ace9d58c2e2b9de, type: 2}

@@ -291,6 +291,7 @@ GameObject:
   - component: {fileID: 221301054}
   - component: {fileID: 221301056}
   - component: {fileID: 221301053}
+  - component: {fileID: 221301057}
   m_Layer: 5
   m_Name: Memory (3)
   m_TagString: Untagged
@@ -426,6 +427,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   objectInventoryID: 3
+--- !u!114 &221301057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221301051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d238cd49fdbd0a4f833750d8aa41833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  memoryPreview: {fileID: 1819459430}
+  customOffset: {x: 120, y: 0, z: 0}
+  blank: {fileID: 11400000, guid: 5168b6f601e682b48ace9d58c2e2b9de, type: 2}
 --- !u!1 &319080311
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,6 +550,7 @@ GameObject:
   - component: {fileID: 415127991}
   - component: {fileID: 415127993}
   - component: {fileID: 415127990}
+  - component: {fileID: 415127994}
   m_Layer: 5
   m_Name: Memory (1)
   m_TagString: Untagged
@@ -669,6 +686,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   objectInventoryID: 1
+--- !u!114 &415127994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415127988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d238cd49fdbd0a4f833750d8aa41833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  memoryPreview: {fileID: 1819459430}
+  customOffset: {x: 80, y: 80, z: 0}
+  blank: {fileID: 11400000, guid: 5168b6f601e682b48ace9d58c2e2b9de, type: 2}
 --- !u!1 &687675740
 GameObject:
   m_ObjectHideFlags: 3
@@ -1088,6 +1120,7 @@ GameObject:
   - component: {fileID: 1377771218}
   - component: {fileID: 1377771220}
   - component: {fileID: 1377771217}
+  - component: {fileID: 1377771221}
   m_Layer: 5
   m_Name: Memory (2)
   m_TagString: Untagged
@@ -1223,6 +1256,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   objectInventoryID: 2
+--- !u!114 &1377771221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377771215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d238cd49fdbd0a4f833750d8aa41833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  memoryPreview: {fileID: 1819459430}
+  customOffset: {x: 80, y: 80, z: 0}
+  blank: {fileID: 11400000, guid: 5168b6f601e682b48ace9d58c2e2b9de, type: 2}
 --- !u!1 &1629506788
 GameObject:
   m_ObjectHideFlags: 0
