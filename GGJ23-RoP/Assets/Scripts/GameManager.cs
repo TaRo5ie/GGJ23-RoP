@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject currentPathPrefab;
     public GameObject Player;
 
-    public GameObject fog;
+    public GameObject fognew_3;
     GameObject fog1;
     float timer;
     bool hasDestroy;
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentStage = 0;
-        fog1 = Instantiate(fog, Player.transform.position, Quaternion.identity);
+        fog1 = Instantiate(fognew_3, Player.transform.position, Quaternion.identity);
         hasDestroy = false;
         currentSubStage = 0;
     }

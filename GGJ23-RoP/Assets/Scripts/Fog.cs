@@ -13,7 +13,7 @@ public class Fog : MonoBehaviour
     void Start()
     {
         isChasing = false;
-        speed = 10f;
+        speed = 5f;
         player = GameObject.Find("Player");
     //    rb = GetComponent<Rigidbody2D>();
     }
