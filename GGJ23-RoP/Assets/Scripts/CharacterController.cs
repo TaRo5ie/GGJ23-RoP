@@ -12,7 +12,7 @@ public class CharacterController : MonoBehaviour
 
     public float runSpeed = 20.0f;
 
-    void Start ()
+    void Start()
     {
         body = GetComponent<Rigidbody2D>();
     }
@@ -22,6 +22,7 @@ public class CharacterController : MonoBehaviour
         // Gives a value between -1 and 1
         horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
         vertical = Input.GetAxisRaw("Vertical"); // -1 is down
+        Flip();
     }
 
     void FixedUpdate()
@@ -31,8 +32,26 @@ public class CharacterController : MonoBehaviour
             // limit movement speed diagonally, so you move at 70% speed
             horizontal *= moveLimiter;
             vertical *= moveLimiter;
-        } 
+        }
 
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
+    private void Flip()
+    {
+        if (Input.GetAxisRaw("Horizontal") < 0)
+        {
+            if (transform.localScale.x > 0)
+            {
+                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+            }
+        }
+        else if (Input.GetAxisRaw("Horizontal") > 0)
+        {
+            if (transform.localScale.x < 0)
+            {
+                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+            }
+        }
+    }
 }
+    

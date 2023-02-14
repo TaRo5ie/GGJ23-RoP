@@ -8,6 +8,7 @@ public class Fog : MonoBehaviour
     public bool isChasing;
     float speed;
     Rigidbody2D rb;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +16,7 @@ public class Fog : MonoBehaviour
         isChasing = false;
         speed = 5f;
         player = GameObject.Find("Player");
-    //    rb = GetComponent<Rigidbody2D>();
+        //    rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -42,6 +43,7 @@ public class Fog : MonoBehaviour
             // rb.velocity = player.GetComponent<Rigidbody2D>().velocity;
 
         }
+
 
     }
 }

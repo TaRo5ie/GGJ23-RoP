@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8638198706715736915}
   - component: {fileID: 1510087452020572403}
   - component: {fileID: -5564338233422765521}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fognew_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
