@@ -52,6 +52,6 @@ public class Fog : MonoBehaviour
         float dis = Vector3.Distance(new Vector3(transform.position.x, transform.position.y,0), 
             new Vector3(player.transform.position.x, player.transform.position.y, 0));
 
-        player.GetComponent<SpriteRenderer>().color = new Color(1,1,1,dis/40);
+        player.GetComponent<SpriteRenderer>().color = new Color(1,1,1,(dis/40)* (dis / 40) * (dis / 40) );
     }
 }
