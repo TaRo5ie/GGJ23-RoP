@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         timer += Time.deltaTime;
         if (!hasDestroy)
 
@@ -41,7 +42,10 @@ public class GameManager : MonoBehaviour
                 destroyFog();
                 hasDestroy = true;
             }
+        */
     }
+
+    
 
     void destroyFog()
     {
