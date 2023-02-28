@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentStage = 0;
-        fog1 = Instantiate(fognew_3, Player.transform.position, Quaternion.identity);
+        fog1 = Instantiate(fognew_3, new Vector3(0,50,0), Quaternion.identity);
         hasDestroy = false;
         currentSubStage = 0;
     }

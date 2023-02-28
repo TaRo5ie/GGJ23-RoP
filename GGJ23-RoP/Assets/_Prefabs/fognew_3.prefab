@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 8638198706715736915}
   - component: {fileID: -5564338233422765521}
   - component: {fileID: 4629139474321428462}
+  - component: {fileID: 716564276920138165}
   m_Layer: 7
   m_Name: fognew_3
   m_TagString: Untagged
@@ -218,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4276ee136bfc144d89e4173c2361d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isChasing: 0
+  isChasing: 1
 --- !u!95 &4629139474321428462
 Animator:
   serializedVersion: 4
@@ -239,6 +240,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &716564276920138165
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3363051167028656629}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4515173318032573219
 GameObject:
   m_ObjectHideFlags: 0
